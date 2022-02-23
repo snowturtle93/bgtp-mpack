@@ -18,8 +18,8 @@ ln -sf  `echo -e $impala_path'/hadoop-yarn/hadoop-yarn-server-resourcemanager.ja
 ln -sf  `echo -e $impala_path'/hadoop-yarn/hadoop-yarn-server-web-proxy.jar /usr/lib/impala/lib/hadoop-yarn-server-web-proxy.jar' | tr -d '\r' | tr -d '?'`
 ln -sf  `echo -e $impala_path'/hadoop/lib/native/libhadoop.so /usr/lib/impala/lib/libhadoop.so' | tr -d '\r' | tr -d '?'`
 ln -sf  `echo -e $impala_path'/hadoop/lib/native/libhadoop.so.1.0.0 /usr/lib/impala/lib/libhadoop.so.1.0.0' | tr -d '\r' | tr -d '?'`
-ln -sf  `echo -e $impala_path'/usr/lib/libhdfs.so /usr/lib/impala/lib/libhdfs.so' | tr -d '\r' | tr -d '?'`
-ln -sf  `echo -e $impala_path'/usr/lib/libhdfs.so.0.0.0 /usr/lib/impala/lib/libhdfs.so.0.0.0' | tr -d '\r' | tr -d '?'`
+ln -sf  `echo -e '../../../lib64/libhdfs.so /usr/lib/impala/lib/libhdfs.so' | tr -d '\r' | tr -d '?'`
+ln -sf  `echo -e '../../../lib64/libhdfs.so.0.0.0 /usr/lib/impala/lib/libhdfs.so.0.0.0' | tr -d '\r' | tr -d '?'`
 ln -sf  `echo -e $impala_path'/hive/lib/hive-ant.jar /usr/lib/impala/lib/hive-ant.jar' | tr -d '\r' | tr -d '?'`
 ln -sf  `echo -e $impala_path'/hive/lib/hive-beeline.jar /usr/lib/impala/lib/hive-beeline.jar' | tr -d '\r' | tr -d '?'`
 ln -sf  `echo -e $impala_path'/hive/lib/hive-common.jar /usr/lib/impala/lib/hive-common.jar' | tr -d '\r' | tr -d '?'`
