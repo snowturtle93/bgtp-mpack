@@ -171,27 +171,31 @@
           </configuration-dependencies>
         </component>-->
         <component>
-          <name>MYSQL_SERVER</name>
-          <displayName>MySQL Server</displayName>
-          <category>MASTER</category>
-          <cardinality>0-1</cardinality>
-          <versionAdvertised>false</versionAdvertised>
-          <reassignAllowed>true</reassignAllowed>
-          <clientsToUpdateConfigs></clientsToUpdateConfigs>
-          <commandScript>
-            <script>scripts/mysql_server.py</script>
-            <scriptType>PYTHON</scriptType>
-          </commandScript>
-          <customCommands>
-            <customCommand>
-              <name>CLEAN</name>
-              <commandScript>
+            <name>MYSQL_SERVER</name>
+            <displayName>MySQL Server</displayName>
+            <category>MASTER</category>
+            <deleted>false</deleted>
+            <cardinality>0-1</cardinality>
+            <versionAdvertised>false</versionAdvertised>
+            <versionAdvertisedInternal>false</versionAdvertisedInternal>
+            <commandScript>
                 <script>scripts/mysql_server.py</script>
                 <scriptType>PYTHON</scriptType>
-                <timeout>600</timeout>
-              </commandScript>
-            </customCommand>
-          </customCommands>
+                <timeout>0</timeout>
+            </commandScript>
+            <customCommands>
+                <customCommand>
+                    <name>CLEAN</name>
+                    <commandScript>
+                        <script>scripts/mysql_server.py</script>
+                        <scriptType>PYTHON</scriptType>
+                        <timeout>600</timeout>
+                    </commandScript>
+                    <background>false</background>
+                </customCommand>
+            </customCommands>
+            <recovery_enabled>false</recovery_enabled>
+            <reassignAllowed>true</reassignAllowed>
         </component>
 
         <component>
